@@ -3,6 +3,7 @@ import React, {useRef} from 'react'
 import { FaMoon, FaTimes } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
+import { Toggle } from './Toogle';
 
 const Navigation = () => {
   const sideMenu = useRef() 
@@ -12,9 +13,10 @@ const Navigation = () => {
   const closeMenu = () => {
     sideMenu.current.style.transform = "translateX(16rem)"
   }
+  
   return (
     <>
-    <nav className="fixed bg-custom-gradient w-full top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-50 lg:px-8 xl:px-[8%]">
+    <nav className="fixed bg-custom-gradient top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-50 lg:px-8 xl:px-[8%]">
   <a href='#top' className="flex items-center gap-4">
     <h2 className="text-xl font-bold cursor-pointer">DevGracies</h2>
   </a>
@@ -28,9 +30,7 @@ const Navigation = () => {
   </ul>
 
   <div className="flex items-center gap-4">
-   <button>
-    <FaMoon />
-   </button>
+   <Toggle/>
     <a href="#Contact" className="hidden lg:flex items-center gap-4 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo">
        <h2 className="text-sm font-semibold">Contact</h2>
       <FaArrowRight/>
