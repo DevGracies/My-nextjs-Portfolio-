@@ -206,3 +206,4 @@ function addVariablesForColors({ addBase, theme }) {
   })
 }
 export default config
+

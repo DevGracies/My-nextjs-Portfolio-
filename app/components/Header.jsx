@@ -5,8 +5,8 @@ import { FaArrowRight, FaDownload } from 'react-icons/fa'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 const Header = () => {
     return (
-        <div className=" text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 relative -top-20">
-        <div>
+        <div className="pb-20 pt-36 text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 relative">
+        <div>  
             <Image src={assets.grace} alt="grace" className="rounded-full w-28 h-25 lg:hidden" />
         </div>
             <h3 className="flex items-end  text-xl md:text-2xl tracking-widest"> Hello! I'm Grace Adegunle 
