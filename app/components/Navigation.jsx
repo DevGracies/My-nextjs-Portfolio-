@@ -44,10 +44,10 @@ const Navigation = () => {
       <FaTimes/>
     </div>
   <li> <a className="hover:text-gray-600 cursor-pointer font-Ovo"  onClick={closeMenu}  href="#top">Home</a> </li>
-    <li><a  className="hover:text-gray-600 cursor-pointer font-Ovo"  onClick={closeMenu} href="#About">About Me</a></li>
-    <li><a  className="hover:text-gray-600 cursor-pointer font-Ovo"  onClick={closeMenu} href="#Services">Services</a></li>
-    <li><a  className="hover:text-gray-600 cursor-pointer font-Ovo"  onClick={closeMenu} href="#Work">My Work</a></li>
-    <li><a  className="hover:text-gray-600 cursor-pointer font-Ovo"  onClick={closeMenu} href="#Contact">Contact Me </a></li>
+    <li><a  className="hover:text-gray-600 cursor-pointer font-Ovo"  onClick={closeMenu} href="#about">About Me</a></li>
+    <li><a  className="hover:text-gray-600 cursor-pointer font-Ovo"  onClick={closeMenu} href="#services">Services</a></li>
+    <li><a  className="hover:text-gray-600 cursor-pointer font-Ovo"  onClick={closeMenu} href="#work">My Work</a></li>
+    <li><a  className="hover:text-gray-600 cursor-pointer font-Ovo"  onClick={closeMenu} href="#contact">Contact Me </a></li>
   </ul>
 </nav>
 </>

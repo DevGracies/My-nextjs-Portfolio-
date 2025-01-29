@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Grid from "./components/Grid";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -9,7 +10,7 @@ export default function Home() {
       <div className="relative justify-center overflow-hidden items-center flex sm:px-10 px-5 mx-auto flex-col">
         <Navigation />
         <Header />
-        <Grid />
+        <About />
       </div>
     
   );
