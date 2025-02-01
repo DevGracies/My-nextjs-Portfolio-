@@ -53,10 +53,7 @@ export const BentoGridItem = ({
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
-      style={{
-        background: "linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)",
-        
-      }} 
+     
     >
       <div className={`${id === 6 ? "flex justify-center" : ""} h-full`}>
         <div className="w-full h-full absolute">

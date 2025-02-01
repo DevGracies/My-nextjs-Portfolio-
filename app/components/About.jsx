@@ -3,7 +3,15 @@ import Image from "next/image";
 import React from "react";
 import Grid from "./Grid";
 import { about } from "@/data";
-import { FaCss3, FaGit, FaGithub, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
+import {
+  FaCss3,
+  FaGit,
+  FaGithub,
+  FaHtml5,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa";
+import RecentProject from "./RecentProject";
 
 const About = () => {
   return (
@@ -27,41 +35,42 @@ const About = () => {
             achieve their goals through innovative and effective software
             solutions.
           </p>
-      <Grid />
-      <ul className=" justify-center md:grid md:grid-cols-3 hidden gap-6 max-w-2xl">
-        {about.map(({ icon, title, description }, index) => (
-          <li key={index} className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1  duration-500 hover:shadow-black">
-            {icon}
-            <h3 className="my-4 font-semibold text-gray-700">{title}</h3>
-            <p className="text-gray-600 text-sm">{description} </p>
-          </li>
-        ))}
-      </ul>
-      <h4 className="my-6 text-gray-700 font-Ovo"> Tools i use </h4>
-      <div className="flex items-center gap-3 sm:gap5">
-        <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
-        <FaGithub className="w-5 sma:w07" />
+          <Grid />
+          <ul className=" justify-center md:grid md:grid-cols-3 hidden gap-6 max-w-2xl">
+            {about.map(({ icon, title, description }, index) => (
+              <li
+                key={index}
+                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1  duration-500 hover:shadow-black"
+              >
+                {icon}
+                <h3 className="my-4 font-semibold text-gray-700">{title}</h3>
+                <p className="text-gray-600 text-sm">{description} </p>
+              </li>
+            ))}
+          </ul>
+          <h4 className="my-6 text-gray-700 font-Ovo"> Tools i use </h4>
+          <div className="flex items-center gap-3 sm:gap5">
+            <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
+              <FaGithub className="w-5 sma:w07" />
+            </div>
+            <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
+              <FaReact className="w-5 sma:w07" />
+            </div>
+            <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
+              <FaNodeJs className="w-5 sma:w07" />
+            </div>
+            <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
+              <FaHtml5 className="w-5 sma:w07" />
+            </div>
+            <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
+              <FaCss3 className="w-5 sma:w07" />
+            </div>
+            <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
+              <FaGit className="w-5 sma:w07" />
+            </div>
+          </div>
         </div>
-        <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
-        <FaReact className="w-5 sma:w07" />
-        </div>
-        <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
-        <FaNodeJs className="w-5 sma:w07" />
-        </div>
-        <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
-        <FaHtml5 className="w-5 sma:w07" />
-        </div>
-        <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
-        <FaCss3 className="w-5 sma:w07" />
-        </div>
-        <div className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-2 duration-500">
-        <FaGit className="w-5 sma:w07" />
-        </div>
-
       </div>
-        </div>
-      </div>
-      
     </div>
   );
 };

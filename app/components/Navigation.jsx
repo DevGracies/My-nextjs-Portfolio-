@@ -1,11 +1,12 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaMoon, FaTimes } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { Toggle } from "./Toogle";
 
 const Navigation = () => {
+  const [isScroll, setIsScroll] = useState(false);
   const sideMenu = useRef();
   const openMenu = () => {
     sideMenu.current.style.transform = "translateX(-16rem)";
@@ -14,14 +15,32 @@ const Navigation = () => {
     sideMenu.current.style.transform = "translateX(16rem)";
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (scrollY > 50) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    });
+  }, []);
+
   return (
     <>
-      <nav className="fixed bg-custom-gradient top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-50 lg:px-8 xl:px-[8%]">
+      <nav
+        className={`fixed top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-50 lg:px-8 xl:px-[8%] ${
+          isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : ""
+        }`}
+      >
         <a href="#top" className="flex items-center gap-4">
           <h2 className="text-xl font-bold cursor-pointer">DevGracies</h2>
         </a>
 
-        <ul className="hidden md:flex items-center lg:gap-8 rounded-full px-12 py-3 gap-6 ">
+        <ul
+          className={`hidden md:flex items-center lg:gap-8 rounded-full px-12 py-3 gap-6 ${
+            isScroll ? "" : "bg-white shadow-sm bg-opacity-50"
+          } `}
+        >
           <li>
             {" "}
             <a className="hover:text-gray-600 cursor-pointer" href="#top">
