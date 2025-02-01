@@ -1,3 +1,6 @@
+
+import { Fa500Px, FaCode, FaGraduationCap, FaPaperPlane } from "react-icons/fa";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -5,17 +8,38 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
-export const gridItems = [
+export const about = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
+    icon: <FaCode className=" w-10 h-10 mt-3" /> ,
+    description: " Html, css, javascript, react js, nextjs, react-native, nodejs",
+    title: "Language"
   },
+  {
+    id: 2,
+    icon: <FaGraduationCap className=" w-10 h-10 mt-3" /> ,
+    description: "B.sc in computer science",
+    title: "Education"
+  },
+  {
+    id: 3,
+    icon: <FaPaperPlane className=" w-10 h-10 mt-3" /> ,
+    description: "I have some projects i've worked on",
+    title: "Project "
+  },
+]
+
+export const gridItems = [
+  // {
+  //   id: 1,
+  //   title: "I prioritize client collaboration, fostering open communication ",
+  //   description: "",
+  //   className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+  //   imgClassName: "w-full h-full",
+  //   titleClassName: "justify-end",
+  //   img: "/b1.svg",
+  //   spareImg: "",
+  // },
   {
     id: 2,
     title: "I'm very flexible with time zone communications",
@@ -68,6 +92,14 @@ export const gridItems = [
     spareImg: "",
   },
 ];
+
+export const infoList = [
+ { icon: "",
+  iconDark: "",
+  title: "",
+  description: ""
+}
+]
 
 export const projects = [
   {
