@@ -1,5 +1,14 @@
-
-import { Fa500Px, FaCode, FaGraduationCap, FaPaperPlane } from "react-icons/fa";
+import {
+  Fa500Px,
+  FaCode,
+  FaFacebook,
+  FaGraduationCap,
+  FaInstagram,
+  FaLinkedin,
+  FaPaperPlane,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 export const navItems = [
   { name: "About", link: "#about" },
@@ -11,23 +20,24 @@ export const navItems = [
 export const about = [
   {
     id: 1,
-    icon: <FaCode className=" w-10 h-10 mt-3" /> ,
-    description: " Html, css, javascript, react js, nextjs, react-native, nodejs",
-    title: "Language"
+    icon: <FaCode className=" w-10 h-10 mt-3" />,
+    description:
+      " Html, css, javascript, react js, nextjs, react-native, nodejs",
+    title: "Language",
   },
   {
     id: 2,
-    icon: <FaGraduationCap className=" w-10 h-10 mt-3" /> ,
+    icon: <FaGraduationCap className=" w-10 h-10 mt-3" />,
     description: "B.sc in computer science",
-    title: "Education"
+    title: "Education",
   },
   {
     id: 3,
-    icon: <FaPaperPlane className=" w-10 h-10 mt-3" /> ,
+    icon: <FaPaperPlane className=" w-10 h-10 mt-3" />,
     description: "I have some projects i've worked on",
-    title: "Project "
+    title: "Project ",
   },
-]
+];
 
 export const gridItems = [
   // {
@@ -94,12 +104,8 @@ export const gridItems = [
 ];
 
 export const infoList = [
- { icon: "",
-  iconDark: "",
-  title: "",
-  description: ""
-}
-]
+  { icon: "", iconDark: "", title: "", description: "" },
+];
 
 export const projects = [
   {
@@ -128,6 +134,22 @@ export const projects = [
   },
   {
     id: 4,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/adrianhajdin/iphone",
+  },
+  {
+    id: 5,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/adrianhajdin/iphone",
+  },
+  {
+    id: 6,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
@@ -236,14 +258,22 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: <FaLinkedin />,
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: <FaTwitter />,
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: <FaInstagram />,
+  },
+  {
+    id: 4,
+    img: <FaFacebook />,
+  },
+  {
+    id: 5,
+    img: <FaWhatsapp />,
   },
 ];
