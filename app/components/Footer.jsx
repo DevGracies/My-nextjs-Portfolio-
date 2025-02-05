@@ -45,19 +45,19 @@ const Footer = () => {
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
-          <a href="">
+          <a href="" target="_blank" >
             <FaLinkedin className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg fill-blue-600 " />
           </a>
-          <a href="">
+          <a href="" target="_blank">
             <FaX className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg " />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/devgracies/" target="_blank">
             <FaInstagram className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg fill-red-600" />
           </a>
-          <a href="">
+          <a href="" target="_blank">
             <FaFacebook className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg fill-blue-700 " />
           </a>
-          <a href="">
+          <a href="" target="_blank">
             <FaWhatsapp className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg fill-green-600 " />
           </a>
         </div>

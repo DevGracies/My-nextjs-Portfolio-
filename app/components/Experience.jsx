@@ -5,9 +5,9 @@ import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full">
+    <div className="py-20 w-full" id="services">
       <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+        My <span className="text-purple">Services</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
@@ -17,12 +17,14 @@ const Experience = () => {
             duration={Math.floor(Math.random() * 10000) + 10000}
             borderRadius="1.75rem"
             style={{
-              background: "rgb(4,7,29)",
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+              // background: "linear-gradient(135deg, #7B2FF7 0%, #F107A3 100%)",
+              // background: "linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%)",
+              // background: "linear-gradient(135deg, #D9A7C7 0%, #FFFCDC 100%)"
+              background: "linear-gradient(135deg, #360033 0%, #0b8793 100%)",
+              // background: "linear-gradient(135deg, #D4145A 0%, #FBB03B 100%)",
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            className="flex-1 text-white dark:text-white border-neutral-200 dark:border-slate-800"
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img

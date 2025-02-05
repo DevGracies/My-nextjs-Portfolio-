@@ -8,9 +8,9 @@ import { FaAccessibleIcon } from "react-icons/fa";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div className="py-20" id="work">
       <h1 className=" font-semibold text-3xl text-center">
-        A small selection of 
+        A small selection of
         <span className="text-purple"> recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-10 ">
@@ -20,9 +20,9 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer>
-              <div className="relative flex items-center justify-center w-[20rem] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div className=" flex items-center justify-center w-[20rem] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                  className=" w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
                   {/* <img src="/bg.png" alt="bgimg" /> */}
