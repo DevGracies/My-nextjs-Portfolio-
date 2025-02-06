@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Header = () => {
   return (
     <div
-      className="pb-20 pt-36 text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 relative"
+      className="text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 "
       id="top"
     >
       <motion.h3

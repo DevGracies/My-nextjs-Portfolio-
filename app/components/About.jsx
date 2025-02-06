@@ -61,18 +61,17 @@ const About = () => {
             achieve their goals through innovative and effective software
             solutions.
           </p>
-          <Grid />
           <motion.ul
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className=" justify-center md:grid md:grid-cols-3 hidden gap-6 max-w-2xl"
+            className=" justify-center md:grid md:grid-cols-3 gap-6 max-w-2xl"
           >
             {about.map(({ icon, title, description }, index) => (
               <motion.li
                 whileHover={{ scale: 1.05 }}
                 key={index}
-                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1  duration-500 hover:shadow-black"
+                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1  duration-500 hover:shadow-black m-4 md:m-0"
               >
                 {icon}
                 <h3 className="my-4 font-semibold text-gray-700">{title}</h3>

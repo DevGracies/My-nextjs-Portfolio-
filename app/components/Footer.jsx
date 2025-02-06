@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full bottom-0 pt-20 pb-10" id="contact">
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
@@ -45,19 +45,19 @@ const Footer = () => {
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
-          <a href="" target="_blank" >
+          <a href="https://www.linkedin.com/in/graceadegunle/" target="_blank">
             <FaLinkedin className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg fill-blue-600 " />
           </a>
-          <a href="" target="_blank">
+          <a href="https://x.com/_Devgracies" target="_blank">
             <FaX className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg " />
           </a>
           <a href="https://www.instagram.com/devgracies/" target="_blank">
             <FaInstagram className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg fill-red-600" />
           </a>
-          <a href="" target="_blank">
+          <a href="https://web.facebook.com/Degracies/?_rdc=1&_rdr#" target="_blank">
             <FaFacebook className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg fill-blue-700 " />
           </a>
-          <a href="" target="_blank">
+          <a href="https://wa.me/2349045954844" target="_blank">
             <FaWhatsapp className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 rounded-lg fill-green-600 " />
           </a>
         </div>

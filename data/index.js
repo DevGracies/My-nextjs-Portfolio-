@@ -9,7 +9,6 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-
 export const about = [
   {
     id: 1,
@@ -36,8 +35,9 @@ export const gridItems = [
   {
     id: 1,
     title: "I prioritize client collaboration, fostering open communication ",
-    description: "", 
-    className: "lg:col-span-3 md:col-span-6 text-white md:row-span-4 lg:min-h-[60vh]",
+    description: "",
+    className:
+      "lg:col-span-3 md:col-span-6 text-white md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
@@ -96,94 +96,73 @@ export const gridItems = [
   },
 ];
 
-
 export const projects = [
   {
     id: 1,
     title: "ProfileCard",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    // img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    des: "A minimal and responsive profile card component built with HTML and CSS, showcasing personal information.",
     link: "https://github.com/adrianhajdin?tab=repositories",
   },
   {
     id: 2,
-    title: "TaskFlow ",
-    des: " A task management web app (React, Node.js, MongoDB)",
-    // img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    title: "TeamFusion",
+    des: "A task-management web application to enhance productivity, collaboration, and workflow efficiency within teams. Built using MERN-Stack.",
     link: "https://github.com/adrianhajdin/zoom-clone",
   },
   {
     id: 3,
-    title: "SwiftShop ",
-    des: "An eCommerce platform (reactjs)",
-    // img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    title: "Business Consultation Bot",
+    des: "An AI-powered business consultation chatbot, a fullstack mobile application designed to give intelligent  recommendations for business growth.",
+    link: "https://github.com/adrianhajdin/iphone",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    // img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    title: "E-Commerce Platform",
+    des: "A fully functional eCommerce web application built with React.js, featuring product listings, a shopping cart, and secure payment integration.",
+    link: "https://github.com/adrianhajdin/ai_saas_app",
   },
   {
     id: 5,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    // img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    title: "Admission Evaluation System (AAUA)",
+    des: "A system for evaluating student applications at Adekunle Ajasin University, to streamline the admission process and decision-making.",
+    link: "https://github.com/adrianhajdin/admission-evaluation",
   },
   {
     id: 6,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    // img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    title: "Encryption & Decryption Application",
+    des: "A security-mobile application that encrypts and decrypts sensitive data, ensuring safe communication and information protection.",
+    link: "https://github.com/DevGracies/Encryption_Decryption",
   },
 ];
-
 
 export const workExperience = [
   {
     id: 1,
     title: "🖥 Frontend Engineer",
-    desc: "Development of a web-based platform using React.js, Next.js, TailwindCSS, Redux, enhancing interactivity.",
+    desc: "Built responsive and interactive web applications using React.js, Next.js, TailwindCSS, and Redux.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
     title: "📱 Mobile App Developer",
-    desc: "Developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    desc: "Developed cross-platform mobile applications for iOS and Android using React Native.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "🗄 Backend Frontend Developer",
-    desc: "Node.js, Express.js, MongoDB.",
+    title: "🗄 Full Stack Developer",
+    desc: "Designed and developed scalable backend services using Node.js, Express.js, and MongoDB.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
   {
     id: 4,
-    title: "🛠 Tools",
-    desc: "Git, Postman",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 5,
-    title: "🚀 Soft Skills",
-    desc: " Problem-solving, Leadership, Public Speaking",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    title: "🛠 Dev Tools & Workflow",
+    desc: "Proficient in Git, Postman, CI/CD pipelines, and API testing.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
   },
 ];
 

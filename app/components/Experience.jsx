@@ -20,8 +20,8 @@ const Experience = () => {
               // background: "linear-gradient(135deg, #7B2FF7 0%, #F107A3 100%)",
               // background: "linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%)",
               // background: "linear-gradient(135deg, #D9A7C7 0%, #FFFCDC 100%)"
-              background: "linear-gradient(135deg, #360033 0%, #0b8793 100%)",
-              // background: "linear-gradient(135deg, #D4145A 0%, #FBB03B 100%)",
+              // background: "linear-gradient(135deg, #360033 0%, #0b8793 100%)",
+              background:  "#8E2DE2",
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
             className="flex-1 text-white dark:text-white border-neutral-200 dark:border-slate-800"
