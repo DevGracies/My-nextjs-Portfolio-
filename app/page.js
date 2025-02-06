@@ -1,13 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
 import About from "./components/About";
-import Approach from "./components/Approach";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
-import Grid from "./components/Grid";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
-import RecentProjects from "./components/RecentProject";
+import Projects from "./components/Projects";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -38,8 +36,7 @@ export default function Home() {
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
       <Experience isDarkMode={isDarkMode} />
-      <RecentProjects isDarkMode={isDarkMode} />
-      {/* <Approach  isDarkMode={isDarkMode} /> */}
+      <Projects isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
     </div>
   );

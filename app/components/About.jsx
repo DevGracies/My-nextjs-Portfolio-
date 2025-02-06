@@ -11,7 +11,6 @@ import {
   FaNodeJs,
   FaReact,
 } from "react-icons/fa";
-import RecentProject from "./RecentProject";
 import { motion } from "framer-motion";
 const About = () => {
   return (

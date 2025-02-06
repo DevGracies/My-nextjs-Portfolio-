@@ -8,6 +8,11 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 
+// import dynamic from "next/dynamic";
+
+// const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+
+
 export const BentoGrid = ({ className, children }) => {
   return (
     <div
@@ -53,7 +58,6 @@ export const BentoGridItem = ({
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
-     
     >
       <div className={`${id === 6 ? "flex justify-center" : ""} h-full`}>
         <div className="w-full h-full absolute">
@@ -125,7 +129,7 @@ export const BentoGridItem = ({
                   copied ? "block" : "block"
                 }`}
               >
-                <Lottie options={defaultOptions} height={200} width={400} /> 
+                <Lottie options={defaultOptions} height={200} width={400} />
               </div>
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}

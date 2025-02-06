@@ -42,7 +42,7 @@ const Header = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
           href="#contact"
-          className="px-10 py-3 border-white  bg-black text-white gap-2 flex rounded-full items-center "
+          className="px-10 py-3 border-white  bg-black  text-white gap-2 flex rounded-full items-center "
         >
           {" "}
           Contact me
