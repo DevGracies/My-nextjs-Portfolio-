@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true);
+
   useEffect(() => {
     if (
       localStorage.theme === "dark" ||

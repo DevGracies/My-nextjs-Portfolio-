@@ -1,3 +1,4 @@
+import { assets } from "@/assets/assets";
 import {
   FaCode,
   FaFacebook,
@@ -101,37 +102,43 @@ export const projects = [
     id: 1,
     title: "ProfileCard",
     des: "A minimal and responsive profile card component built with HTML and CSS, showcasing personal information.",
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    link: "https://graceadegunleprofilecard.netlify.app/",
+    img: assets.card,
   },
   {
     id: 2,
     title: "TeamFusion",
     des: "A task-management web application to enhance productivity, collaboration, and workflow efficiency within teams. Built using MERN-Stack.",
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://github.com/DevGracies/Task-Manager",
+    img: assets.team,
   },
   {
     id: 3,
     title: "Business Consultation Bot",
     des: "An AI-powered business consultation chatbot, a fullstack mobile application designed to give intelligent  recommendations for business growth.",
-    link: "https://github.com/adrianhajdin/iphone",
+    link: "https://github.com/DevGracies/MyFinalYearProjectChatBot",
+    img: assets.chatbot,
   },
   {
     id: 4,
     title: "E-Commerce Platform",
     des: "A fully functional eCommerce web application built with React.js, featuring product listings, a shopping cart, and secure payment integration.",
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: "https://github.com/DevGracies/e-commerce",
+    img: assets.ecommerce,
   },
   {
     id: 5,
     title: "Admission Evaluation System (AAUA)",
     des: "A system for evaluating student applications at Adekunle Ajasin University, to streamline the admission process and decision-making.",
-    link: "https://github.com/adrianhajdin/admission-evaluation",
+    link: "https://github.com/DevGracies/Admission-Evaluation-System",
+    img: assets.chatbot,
   },
   {
     id: 6,
     title: "Encryption & Decryption Application",
     des: "A security-mobile application that encrypts and decrypts sensitive data, ensuring safe communication and information protection.",
     link: "https://github.com/DevGracies/Encryption_Decryption",
+    img: assets.encrypt,
   },
 ];
 

@@ -7,27 +7,27 @@ import { motion } from "framer-motion";
 const Header = () => {
   return (
     <div
-      className="text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 "
+      className="text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 md:mt-10 sm:mt-32 mt-14"
       id="top"
     >
       <motion.h3
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="flex items-end  text-xl md:text-2xl tracking-widest"
+        className="flex items-end  text-3xl font-bold md:text-4xl tracking-widest"
       >
         {" "}
         Hello! I'm Grace Adegunle
       </motion.h3>
       <TextGenerateEffect
-        className=" text-4xl sm:text-3xl uppercase font-Ovo"
+        className=" uppercase font-Ovo"
         words={"Problem Solver | Innovator |  Developer"}
       />
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7 }}
-        className="max-w-2xl mx-auto md:tracking-wider mb-4 text-sm md:text-lg lg:text-lg text-center"
+        className="max-w-2xl mx-auto md:tracking-wider mb-4 text-lg md:text-xl lg:text-lg text-center"
       >
         With a passion for building technology that empowers and inspires, I
         specialize in frontend, backend, and mobile development, transforming
@@ -42,7 +42,7 @@ const Header = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
           href="#contact"
-          className="px-10 py-3 border-white  bg-black  text-white gap-2 flex rounded-full items-center "
+          className="px-10 py-3 border-white  bg-[#8E2DE2]  text-white gap-2 flex rounded-full items-center "
         >
           {" "}
           Contact me

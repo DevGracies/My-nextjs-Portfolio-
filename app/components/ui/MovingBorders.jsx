@@ -23,7 +23,7 @@ export function Button({
     <Component
       className={cn(
         "bg-transparent relative text-xl p-[1px] overflow-hidden md:col-span-2 md:row-span-1",
-        containerClassName
+        containerClassName 
       )}
       style={{
         borderRadius: borderRadius,

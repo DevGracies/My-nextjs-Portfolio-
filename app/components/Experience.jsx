@@ -2,13 +2,19 @@ import React from "react";
 
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
     <div className="py-20 w-full" id="services">
-      <h1 className="heading">
-        My <span className="text-purple">Services</span>
-      </h1>
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-center text-5xl font-Ovo"
+      >
+        My <span className="text-[#8E2DE2]">Development Services</span>
+      </motion.h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
@@ -17,11 +23,7 @@ const Experience = () => {
             duration={Math.floor(Math.random() * 10000) + 10000}
             borderRadius="1.75rem"
             style={{
-              // background: "linear-gradient(135deg, #7B2FF7 0%, #F107A3 100%)",
-              // background: "linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%)",
-              // background: "linear-gradient(135deg, #D9A7C7 0%, #FFFCDC 100%)"
-              // background: "linear-gradient(135deg, #360033 0%, #0b8793 100%)",
-              background:  "#8E2DE2",
+              background: "#8E2DE2",
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
             className="flex-1 text-white dark:text-white border-neutral-200 dark:border-slate-800"

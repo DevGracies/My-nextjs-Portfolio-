@@ -24,7 +24,7 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className=" text-3xl text-center font-bold font-Ovo lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
+          Ready to take <span className="text-[#8E2DE2]">your</span> digital
           presence to the next level?
         </h1>
         <p className=" md:mt-10 my-5 text-xl font-semibold font-Ovo text-center">
@@ -36,6 +36,7 @@ const Footer = () => {
             title="Let's get in touch"
             icon={<FaLocationArrow />}
             position="right"
+            
           />
         </a>
       </div>
