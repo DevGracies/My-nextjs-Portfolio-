@@ -14,7 +14,7 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
-        <h2 className="text-center font-bold  text-5xl font-Ovo text-[#8E2DE2]">
+        <h2 className="text-center sm:text-5xl font-bold text-3xl font-Ovo text-[#8E2DE2]">
           Bringing Ideas to Life
         </h2>
         <i className="text-center flex font-Ovo justify-center">
@@ -30,7 +30,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
               key={id}
-              className=" hover:cursor-pointer hover:zoom-out-50 hover:scale-50 w-96 h-96 bg-white dark:text-black m-10 p-4 border-none rounded-2xl shadow-black-200 shadow-sm "
+              className=" hover:cursor-pointer hover:zoom-out-50 hover:scale-50 sm:w-96 sm:h-96 w-60 m-10 p-4 border-none rounded-2xl shadow-black-200 shadow-sm "
             >
               <div className="w-full h-1/2">
                 <Image
