@@ -100,45 +100,61 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "FastAPI Backend with Nginx ",
+    des: "A scalable backend using FastAPI and deployed it with Nginx for efficient request handling and improved performance. Showing my skills in  node express with API development, server management, and optimization.",
+    link: "https://github.com/DevGracies/fastapi-book-project",
+    img: assets.backend,
+  },
+  {
+    id: 2,
+    title: "Conference-Ticket-Generator ",
+    des: "A Conference Ticket Generator, the ticket generator will allow users to fill out a form, perform validations, and generate a ticket.",
+    link: "https://conference-ticket-generator-xi-khaki.vercel.app/",
+    img: assets.ticket,
+  },
+  {
+    id: 3,
+    title: "Business Consultation Bot",
+    des: "An AI-powered business consultation chatbot, a fullstack mobile application designed to give intelligent  recommendations for business growth. Built with React-native",
+    link: "https://github.com/DevGracies/MyFinalYearProjectChatBot",
+    img: assets.chatbot,
+  },
+  {
+    id: 4,
     title: "ProfileCard",
     des: "A minimal and responsive profile card component built with HTML and CSS, showcasing personal information.",
     link: "https://graceadegunleprofilecard.netlify.app/",
     img: assets.card,
   },
   {
-    id: 2,
+    id: 5,
     title: "TeamFusion",
     des: "A task-management web application to enhance productivity, collaboration, and workflow efficiency within teams. Built using MERN-Stack.",
     link: "https://github.com/DevGracies/Task-Manager",
     img: assets.team,
   },
+
   {
-    id: 3,
-    title: "Business Consultation Bot",
-    des: "An AI-powered business consultation chatbot, a fullstack mobile application designed to give intelligent  recommendations for business growth.",
-    link: "https://github.com/DevGracies/MyFinalYearProjectChatBot",
-    img: assets.chatbot,
-  },
-  {
-    id: 4,
+    id: 6,
     title: "E-Commerce Platform",
     des: "A fully functional eCommerce web application built with React.js, featuring product listings, a shopping cart, and secure payment integration.",
     link: "https://github.com/DevGracies/e-commerce",
     img: assets.ecommerce,
   },
   {
-    id: 5,
-    title: "Admission Evaluation System (AAUA)",
-    des: "A system for evaluating student applications at Adekunle Ajasin University, to streamline the admission process and decision-making.",
-    link: "https://github.com/DevGracies/Admission-Evaluation-System",
-    img: assets.chatbot,
-  },
-  {
-    id: 6,
+    id: 7,
     title: "Encryption & Decryption Application",
     des: "A security-mobile application that encrypts and decrypts sensitive data, ensuring safe communication and information protection.",
     link: "https://github.com/DevGracies/Encryption_Decryption",
     img: assets.encrypt,
+  },
+
+  {
+    id: 8,
+    title: "Tech Jobs Backend with Telex Integration",
+    des: "A tech jobs platform, integrating Telex for seamless job updates and notifications. This shows my skills in backend development, third-party API integration, and real-time communication systems.",
+    link: "https://github.com/DevGracies/remotejobs",
+    img: assets.backend,
   },
 ];
 

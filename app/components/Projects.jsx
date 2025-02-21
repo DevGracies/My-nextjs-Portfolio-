@@ -1,12 +1,15 @@
+"use-client";
 import { projects } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { FaLocationArrow } from "react-icons/fa";
 
 import { motion } from "framer-motion";
+import ReadMoreCard from "./ReadMoreCard";
 
 const Projects = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <div id="work" className="scroll-mt-20">
       <motion.div
@@ -30,7 +33,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
               key={id}
-              className=" hover:cursor-pointer hover:zoom-out-50 hover:scale-50 sm:w-96 sm:h-96 w-60 m-10 p-4 border-none rounded-2xl shadow-black-200 shadow-sm "
+              className={` hover:cursor-pointer hover:zoom-out-50 hover:scale-50 sm:w-96 sm:h-[450px] w-60 m-10 p-4 border-none rounded-2xl shadow-black-200 shadow-sm `}
             >
               <div className="w-full h-1/2">
                 <Image
@@ -40,7 +43,7 @@ const Projects = () => {
                 />
               </div>
               <h2 className="font-semibold">{title} </h2>
-              <p>{des} </p>
+              <ReadMoreCard text={des} />
               <div>
                 <Link
                   className="flex justify-between items-center w-full h-full rounded p-3"

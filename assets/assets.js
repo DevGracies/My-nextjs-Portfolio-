@@ -4,12 +4,15 @@ import ecommerce from "./ecommerce.jpg";
 import team from "./team.jpg";
 import card from "./card.png";
 import encrypt from "./encrypt.jpg"
-
+import ticket from "./ticket.jpg"
+import backend from "./backend.png"
 export const assets = {
   grace,
   chatbot,
   ecommerce,
   card,
   team,
-  encrypt
+  encrypt,
+  ticket,
+  backend
 };
