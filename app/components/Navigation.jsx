@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { FaMoon, FaRegMoon, FaTimes } from "react-icons/fa";
+import {  FaTimes } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
-import { FaSun } from "react-icons/fa6";
+import ThemeSwitch from "./ThemeSwitch";
 
-const Navigation = ({ isDarkMode, setIsDarkMode }) => {
+const Navigation = () => {
   const [isScroll, setIsScroll] = useState(false);
   const sideMenu = useRef();
   const openMenu = () => {
@@ -72,11 +72,7 @@ const Navigation = ({ isDarkMode, setIsDarkMode }) => {
         </ul>
 
         <div className="flex items-center gap-4">
-          {isDarkMode ? (
-            <FaSun onClick={() => setIsDarkMode((prev) => !prev)} />
-          ) : (
-            <FaRegMoon onClick={() => setIsDarkMode((prev) => !prev)} />
-          )}
+         <ThemeSwitch />
           <a
             href="#contact"
             className="hidden lg:flex items-center gap-4 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo"

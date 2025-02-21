@@ -6,7 +6,7 @@ import svgToDataUri from "mini-svg-data-uri";
 
 /** @type {import('tailwindcss').Config} */
 const config = {
-  darkMode: "selector",
+  darkMode: "class", 
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
