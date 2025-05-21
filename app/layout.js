@@ -15,7 +15,11 @@ const ovo = Ovo({
 export const metadata = {
   title: "Grace Adegunle Portfolio",
   description: "This is my portfolio",
+  icons: {
+    icon: "./grace.jpg",
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (

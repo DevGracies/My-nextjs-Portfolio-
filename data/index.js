@@ -100,9 +100,9 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "FastAPI Backend with Nginx ",
-    des: "A scalable backend using FastAPI and deployed it with Nginx for efficient request handling and improved performance. Showing my skills in  node express with API development, server management, and optimization.",
-    link: "https://github.com/DevGracies/fastapi-book-project",
+    title: "Neominds",
+    des: "At NeoMinds, we nurture creativity, confidence, and future-ready skills through personalized tech education designed for curious kids and teenagers.",
+    link: "https://neomind-techbloom.vercel.app/SchoolPage",
     img: assets.backend,
   },
   {
@@ -151,10 +151,10 @@ export const projects = [
 
   {
     id: 8,
-    title: "Tech Jobs Backend with Telex Integration",
-    des: "A tech jobs platform, integrating Telex for seamless job updates and notifications. This shows my skills in backend development, third-party API integration, and real-time communication systems.",
-    link: "https://github.com/DevGracies/remotejobs",
-    img: assets.backend,
+    title: "Soar FinTech Task",
+    des: "A Fintech Admin page task that shows my design development expertises.",
+    link: "https://soar-amber.vercel.app/",
+    img: assets.soar,
   },
 ];
 

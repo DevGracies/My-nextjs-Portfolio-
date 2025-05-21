@@ -6,6 +6,7 @@ import card from "./card.png";
 import encrypt from "./encrypt.jpg"
 import ticket from "./ticket.jpg"
 import backend from "./backend.png"
+import soar from "./soar.jpg"
 export const assets = {
   grace,
   chatbot,
@@ -14,5 +15,6 @@ export const assets = {
   team,
   encrypt,
   ticket,
-  backend
+  backend, 
+  soar
 };
