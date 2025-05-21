@@ -1,4 +1,3 @@
-import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 import { FaArrowRight, FaDownload } from "react-icons/fa";

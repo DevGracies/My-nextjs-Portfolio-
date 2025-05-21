@@ -1,5 +1,5 @@
 "use-client";
-import { projects } from "@/data";
+import { projects } from "../../data/index.js";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";

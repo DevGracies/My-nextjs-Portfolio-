@@ -1,6 +1,6 @@
 import React from "react";
 
-import { workExperience } from "@/data";
+import { workExperience } from "../../data/index.js";
 import { Button } from "./ui/MovingBorders";
 import { motion } from "framer-motion";
 
