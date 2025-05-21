@@ -72,68 +72,92 @@ const About = () => {
         </motion.div>
 
         <motion.div
-  initial="hidden"
-  whileInView="visible"
-  transition={{ staggerChildren: 0.2 }}
-  className="flex-1"
->
-  {/* Animated Paragraph */}
-  <motion.p
-    variants={{
-      hidden: { opacity: 0, y: 20 },
-      visible: { opacity: 1, y: 0 },
-    }}
-    transition={{ duration: 1 }}
-    className="mb-10 max-w-2xl font-Ovo text-lg leading-relaxed text-gray-800 dark:text-gray-200"
-  >
-    I’m a <span className="text-[#8E2DE2] font-bold">Software Developer</span> with expertise in 
-    <span className="text-[#8E2DE2] font-bold"> frontend</span>, 
-    <span className="text-[#8E2DE2] font-bold"> backend</span>, and 
-    <span className="text-[#8E2DE2] font-bold"> mobile applications</span>, backed by 4 years of experience.
-    I’ve collaborated with leading organizations, driving success through 
-    <span className="italic text-pink-500"> innovative</span> and 
-    <span className="italic text-pink-500"> impactful software solutions</span>.
-  </motion.p>
+          initial="hidden"
+          whileInView="visible"
+          transition={{ staggerChildren: 0.2 }}
+          className="flex-1"
+        >
+          {/* Animated Paragraph */}
+          <motion.p
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 1 }}
+            className="mb-10 max-w-2xl font-Ovo text-lg leading-relaxed text-gray-800 dark:text-gray-200"
+          >
+            I’m a{" "}
+            <span className="text-[#8E2DE2] font-bold">Software Developer</span>{" "}
+            with expertise in
+            <span className="text-[#8E2DE2] font-bold"> frontend</span>,
+            <span className="text-[#8E2DE2] font-bold"> backend</span>, and
+            <span className="text-[#8E2DE2] font-bold">
+              {" "}
+              mobile applications
+            </span>
+            , backed by 4 years of experience. I’ve collaborated with leading
+            organizations, driving success through
+            <span className="italic text-pink-500"> innovative</span> and
+            <span className="italic text-pink-500">
+              {" "}
+              impactful software solutions
+            </span>
+            .
+          </motion.p>
 
-  {/* Animated List */}
-  <motion.ul
-    className="space-y-4 list-none pl-2"
-    variants={{
-      visible: {
-        transition: {
-          staggerChildren: 0.25,
-        },
-      },
-    }}
-  >
-    {[
-  { emoji: "🎓", text: "B.Sc. Computer Science: Strong foundation in software development" },
-  { emoji: "💻", text: "4+ Years Experience: Frontend, Backend, Fullstack & Mobile" },
-  { emoji: "🛠", text: "Languages: HTML, CSS, JS, React, Next.js, React Native, Node.js" },
-  { emoji: "🚀", text: "Freelancer & Tech Enthusiast: Impactful digital solutions" },
-  { emoji: "🌎", text: "Open to global remote and international roles" },
-].map(({ emoji, text }, i) => (
-  <motion.li
-    key={i}
-    variants={{
-      hidden: { opacity: 0, x: -20 },
-      visible: { opacity: 1, x: 0 },
-    }}
-    className="relative pl-6 text-base sm:text-lg text-gray-700 dark:text-gray-200 font-medium group"
-  >
-    <span
-      aria-hidden
-      className="absolute left-0 top-1 text-[#8E2DE2] group-hover:scale-125 transition-transform duration-300"
-    >
-      {emoji}
-    </span>
-    <span className="ml-2 group-hover:text-[#8E2DE2] transition-colors duration-300">
-      {text}
-    </span>
-  </motion.li>
-))}
-  </motion.ul>
-</motion.div>
+          <motion.ul
+            className="space-y-4 list-none pl-2"
+            variants={{
+              visible: {
+                transition: {
+                  staggerChildren: 0.25,
+                },
+              },
+            }}
+          >
+            {[
+              {
+                emoji: "🎓",
+                text: "B.Sc. Computer Science: Strong foundation in software development",
+              },
+              {
+                emoji: "💻",
+                text: "4+ Years Experience: Frontend, Backend, Fullstack & Mobile",
+              },
+              {
+                emoji: "🛠",
+                text: "Languages: HTML, CSS, JS, React, Next.js, React Native, Node.js",
+              },
+              {
+                emoji: "🚀",
+                text: "Freelancer & Tech Enthusiast: Impactful digital solutions",
+              },
+              {
+                emoji: "🌎",
+                text: "Open to global remote and international roles",
+              },
+            ].map(({ emoji, text }, i) => (
+              <motion.li
+                key={i}
+                variants={{
+                  hidden: { opacity: 0, x: -20 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="relative pl-6 text-base sm:text-lg text-gray-700 dark:text-gray-200 font-medium group"
+              >
+                <span
+                  aria-hidden
+                  className="absolute left-0 top-1 text-[#8E2DE2] group-hover:scale-125 transition-transform duration-300"
+                >
+                  {emoji}
+                </span>
+                <span className="ml-2 group-hover:text-[#8E2DE2] transition-colors duration-300">
+                  {text}
+                </span>
+              </motion.li>
+            ))}
+          </motion.ul>
+        </motion.div>
       </motion.div>
 
       <motion.h4
@@ -145,7 +169,6 @@ const About = () => {
         My Toolkit
       </motion.h4>
 
-      {/* TOOLKIT GRID */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -164,7 +187,6 @@ const About = () => {
         ))}
       </motion.div>
 
-      {/* SECOND ROW FOR SMALL SCREENS (5 icons) */}
       <div className="sm:hidden mt-6 grid grid-cols-5 gap-4 max-w-xs mx-auto">
         {techStack.slice(6, 11).map((tool, index) => (
           <motion.div
