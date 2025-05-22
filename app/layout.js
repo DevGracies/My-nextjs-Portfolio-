@@ -1,6 +1,8 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import Navigation from "./components/Navigation";
+import ScrollToTop from "./ScrollToTop";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -16,10 +18,9 @@ export const metadata = {
   title: "Grace Adegunle Portfolio",
   description: "This is my portfolio",
   icons: {
-    icon: "./grace.jpg",
+    icon: "./picture.png",
   },
 };
-
 
 export default function RootLayout({ children }) {
   return (
@@ -37,6 +38,8 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
+          <ScrollToTop />
+          <Navigation />
           {children}
         </ThemeProvider>
       </body>

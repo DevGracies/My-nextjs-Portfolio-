@@ -11,40 +11,43 @@ import {
   FaHtml5,
   FaNodeJs,
   FaReact,
+  FaJs,
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiNextdotjs } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const techStack = [
-  { icon: <FaGithub />, color: "" },
-  { icon: <FaReact />, color: "text-blue-500" },
-  { icon: <FaNodeJs />, color: "text-green-600" },
-  { icon: <FaHtml5 />, color: "text-orange-500" },
-  { icon: <FaCss3 />, color: "text-blue-400" },
-  { icon: <FaGit />, color: "text-red-600" },
-  { icon: <FaDatabase />, color: "text-yellow-500" },
-  { icon: <FaBootstrap />, color: "text-purple-600" },
-  { icon: <RiTailwindCssFill />, color: "text-cyan-700" },
-  { icon: <TbBrandNextjs />, color: "text-black dark:text-white" },
-  { icon: <SiMongodb />, color: "text-green-400" },
-  //  { icon: <FaT />, color: "text-blue-500" },
+  { name: "GitHub", icon: <FaGithub />, color: "" },
+  { name: "React", icon: <FaReact />, color: "text-blue-500" },
+  { name: "Node.js", icon: <FaNodeJs />, color: "text-green-600" },
+  { name: "HTML5", icon: <FaHtml5 />, color: "text-orange-500" },
+  { name: "CSS3", icon: <FaCss3 />, color: "text-blue-400" },
+  { name: "JavaScript", icon: <FaJs />, color: "text-yellow-400" },
+  { name: "Git", icon: <FaGit />, color: "text-red-600" },
+  { name: "Database", icon: <FaDatabase />, color: "text-yellow-500" },
+  { name: "Bootstrap", icon: <FaBootstrap />, color: "text-purple-600" },
+  { name: "Tailwind CSS", icon: <RiTailwindCssFill />, color: "text-cyan-700" },
+  {
+    name: "Next.js",
+    icon: <SiNextdotjs />,
+    color: "text-black dark:text-white",
+  },
+  { name: "MongoDB", icon: <SiMongodb />, color: "text-green-400" },
 ];
 
-const About = () => {
+const about = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      id="about"
-      className="w-full px-[12%] py-10 scroll-mt-20"
+      className="w-full px-[12%] py-24 bg-gradient-to-b  min-h-screen"
     >
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
         className="text-center text-5xl font-Ovo text-[#8E2DE2]"
       >
         Behind the Code
@@ -54,20 +57,20 @@ const About = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col lg:flex-row items-center xl:justify-between gap-20 my-20"
+        className="flex flex-col lg:flex-row items-center xl:justify-between gap-16 mt-16"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="w-64 sm:w-80 rounded-3xl max-w-none overflow-hidden shadow-lg"
+          className="w-64 sm:w-80 rounded-3xl overflow-hidden shadow-xl"
         >
           <Image
             src="/picture.png"
             width={300}
             height={300}
-            alt="grace"
-            className="w-full rounded-3xl object-cover"
+            alt="Developer"
+            className="w-full h-auto rounded-3xl object-cover"
           />
         </motion.div>
 
@@ -77,7 +80,6 @@ const About = () => {
           transition={{ staggerChildren: 0.2 }}
           className="flex-1"
         >
-          {/* Animated Paragraph */}
           <motion.p
             variants={{
               hidden: { opacity: 0, y: 20 },
@@ -94,26 +96,15 @@ const About = () => {
             <span className="text-[#8E2DE2] font-bold">
               {" "}
               mobile applications
-            </span>
-            , backed by 4 years of experience. I’ve collaborated with leading
-            organizations, driving success through
-            <span className="italic text-pink-500"> innovative</span> and
-            <span className="italic text-pink-500">
-              {" "}
-              impactful software solutions
-            </span>
-            .
+            </span>{" "}
+            with 4+ years of experience. I collaborate with brands to build
+            <span className="italic text-[#8E2DE2]"> creative</span> and
+            <span className="italic text-[#8E2DE2]"> impactful solutions</span>.
           </motion.p>
 
           <motion.ul
-            className="space-y-4 list-none pl-2"
-            variants={{
-              visible: {
-                transition: {
-                  staggerChildren: 0.25,
-                },
-              },
-            }}
+            className="space-y-4 pl-2"
+            variants={{ visible: { transition: { staggerChildren: 0.25 } } }}
           >
             {[
               {
@@ -133,7 +124,7 @@ const About = () => {
                 text: "Freelancer & Tech Enthusiast: Impactful digital solutions",
               },
               {
-                emoji: "🌎",
+                emoji: "🌍",
                 text: "Open to global remote and international roles",
               },
             ].map(({ emoji, text }, i) => (
@@ -145,10 +136,7 @@ const About = () => {
                 }}
                 className="relative pl-6 text-base sm:text-lg text-gray-700 dark:text-gray-200 font-medium group"
               >
-                <span
-                  aria-hidden
-                  className="absolute left-0 top-1 text-[#8E2DE2] group-hover:scale-125 transition-transform duration-300"
-                >
+                <span className="absolute left-0 top-1 text-[#8E2DE2] group-hover:scale-125 transition-transform duration-300">
                   {emoji}
                 </span>
                 <span className="ml-2 group-hover:text-[#8E2DE2] transition-colors duration-300">
@@ -164,7 +152,7 @@ const About = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="my-10 font-Ovo text-center text-5xl text-[#8E2DE2]"
+        className="mt-20 mb-12 font-Ovo text-center text-5xl text-[#8E2DE2]"
       >
         My Toolkit
       </motion.h4>
@@ -173,34 +161,31 @@ const About = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="grid grid-cols-3 sm:grid-cols-6 gap-6 max-w-4xl mx-auto"
+        className="grid grid-cols-3 sm:grid-cols-6 gap-6 max-w-5xl mx-auto"
       >
-        {techStack.map((tool, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ rotate: 360 }}
-            transition={{ duration: 1.2, ease: "easeInOut" }}
-            className={`text-4xl sm:text-5xl flex items-center justify-center aspect-square rounded-xl cursor-pointer hover:scale-110 transition-transform duration-300 ${tool.color}`}
-          >
-            {tool.icon}
-          </motion.div>
-        ))}
+        {techStack.map((tool, index) => {
+          const isTopRow = index < 6;
+          return (
+            <motion.div
+              key={index}
+              whileHover={{ rotate: 360 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+              className={`relative group text-4xl sm:text-5xl flex items-center justify-center aspect-square rounded-xl cursor-pointer hover:scale-110 transition-transform duration-300 ${tool.color}`}
+            >
+              {tool.icon}
+              <span
+                className={`absolute ${
+                  isTopRow ? "-top-10" : "top-20"
+                } text-sm px-2 py-1 bg-black text-white dark:bg-white dark:text-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity z-50`}
+              >
+                {tool.name}
+              </span>
+            </motion.div>
+          );
+        })}
       </motion.div>
-
-      <div className="sm:hidden mt-6 grid grid-cols-5 gap-4 max-w-xs mx-auto">
-        {techStack.slice(6, 11).map((tool, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ rotate: 360 }}
-            transition={{ duration: 1.2, ease: "easeInOut" }}
-            className={`text-4xl flex items-center justify-center aspect-square rounded-xl cursor-pointer hover:scale-110 transition-transform duration-300 ${tool.color}`}
-          >
-            {tool.icon}
-          </motion.div>
-        ))}
-      </div>
     </motion.div>
   );
 };
 
-export default About;
+export default about;
