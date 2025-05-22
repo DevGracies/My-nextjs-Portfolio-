@@ -27,6 +27,7 @@ const Navigation = () => {
   }, []);
 
   useEffect(() => {
+    // Automatically close menu when path changes
     setMenuOpen(false);
   }, [pathname]);
 
@@ -105,10 +106,11 @@ const Navigation = () => {
               <button
                 onClick={() => handleMobileClick(link.href)}
                 className={`text-left w-full hover:text-gray-400 ${
-                  pathname === link.href ? "text-#8E2DE2] font-bold" : ""
+                  pathname === link.href ? "text-[#8E2DE2] font-bold" : ""
                 }`}
-              ></button>
-              {link.name}
+              >
+                {link.name}
+              </button>
             </li>
           ))}
         </ul>
